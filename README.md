@@ -6,7 +6,7 @@ Yet another Docker image to use ngrok v2
 
 Becuase I was unable to find an existing image that would allow me to run ngrok using my existing configuration file `.ngrok.yml` that I was already using to run ngrok locally.
 
-Before creating this image I tried using a cople of the existing one, but I was unable to make them work with the mentioned used case, which seems to me like the most simple and preferred way that anyone would like to follow IMO, but I might be wrong :-). Of course other images give more options and parameters, but I think they are not really needed because you can encapsulate all the configuration required inside you local `.ngrok.yml`
+Before creating this image I tried using a cople of the existing one, but I was unable to make them work with the mentioned used case, which seems to me like the most simple and preferred way that anyone would like to follow IMO, but I might be wrong :-). Of course other images give more options and parameters, but I think they are not really needed because you can encapsulate all the configuration required inside your local `.ngrok.yml`
 
 ## Features
 
