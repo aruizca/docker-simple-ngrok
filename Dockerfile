@@ -16,6 +16,8 @@ RUN apt-get update && \
     rm -f ngrok.zip && \
     mkdir .ngrok2
 
+COPY entrypoint.sh .
+
 # Set permission to created user because everything created through Dockerfile until now belongs to root
 RUN chown $USER:$USER -R /home/$USER    
 
@@ -24,3 +26,5 @@ EXPOSE 4040
 EXPOSE 80
 
 USER ngrok
+
+CMD ["./entrypoint.sh"]
